@@ -4,11 +4,8 @@ if (isset($_GET['id_buku'])) {
 }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <?php echo (isset($_GET['id_buku'])) ? "<title>Update Buku</title>": "<title>Tambah Buku</title>" ?> 
 </head>
 <body>
@@ -23,43 +20,25 @@ if (isset($_GET['id_buku'])) {
                 <td><input type="text" name="judul" <?php echo (isset($_GET['id_buku'])) ?  "value = " . $result[0]["judul_buku"] . "" : "value = '' "; ?> required> <br></td>
             </tr>
             <tr>
-                <td>
-                    Nama Penulis
-                </td>
-                <td>
-                    <input type="text" name="penulis" <?php echo (isset($_GET['id_buku'])) ?  "value = " . $result[0]["penulis"] . "" : "value = '' "; ?> required> <br>
-                </td>
+                <td>Nama Penulis</td>
+                <td><input type="text" name="penulis" <?php echo (isset($_GET['id_buku'])) ?  "value = " . $result[0]["penulis"] . "" : "value = '' "; ?> required> <br></td>
             </tr>
             <tr>
-                <td>
-                    Penerbit
-                </td>
-                <td>
-
-                <input type="text" name="penerbit" <?php echo (isset($_GET['id_buku'])) ?  "value = " . $result[0]["penerbit"] . "" : "value = '' "; ?> required> <br>
-                </td>
+                <td>Penerbit</td>
+                <td><input type="text" name="penerbit" <?php echo (isset($_GET['id_buku'])) ?  "value = " . $result[0]["penerbit"] . "" : "value = '' "; ?> required> <br></td>
             </tr>
             <tr>
-                <td>
-                    Tahun Terbit
-
-                </td>
-                <td>
-                <input type="text" name="thnterbit" <?php echo (isset($_GET['id_buku'])) ?  "value = " . $result[0]["tahun_terbit"] . "" : "value = '' "; ?> required> <br>
-
-                </td>
+                <td>Tahun Terbit</td>
+                <td><input type="text" name="thnterbit" <?php echo (isset($_GET['id_buku'])) ?  "value = " . $result[0]["tahun_terbit"] . "" : "value = '' "; ?> required> <br></td>
             </tr>
             <tr>
-                <td></td>
                 <td>
                     <?php 
                     if (isset($_GET['id_buku'])) {
                         echo "<button type=\"submit\" name=\"update\">Update</button>";
                     }else {
-                        echo "<button type=\"submit\" name=\"submit\">Tambah</button>";
-                        
+                        echo "<button type=\"submit\" name=\"submit\">Tambah</button>";   
                     }
-
                     ?>
                 </td>
             </tr>

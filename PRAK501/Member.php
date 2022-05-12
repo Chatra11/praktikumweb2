@@ -7,6 +7,20 @@ if (isset($_GET['id_member'])){
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        tr{
+            border: black;
+        }
+        th{
+            background-color: #a0a0a0;
+        }
+        td{
+            background-color: #E8E8E8;
+        }
+    </style>
     <title>Member Perpus</title>
 </head>
 <body>
@@ -16,7 +30,7 @@ if (isset($_GET['id_member'])){
                 <th>ID Member</th>
                 <th>Nama</th>
                 <th>Nomor</th>
-                <th>Almat</th>
+                <th>Alamat</th>
                 <th>Tanggal Daftar</th>
                 <th>Tanggal Terakhir Bayar</th>
                 <th>Aksi</th>

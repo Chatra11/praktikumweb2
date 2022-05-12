@@ -36,7 +36,6 @@ if (isset($_GET['id_member'])) {
                 <td><input type="date" name="bayar" <?php echo (isset($_GET['id_member'])) ?  "value = " . $result[0]["tgl_terakhir_bayar"] . "" : "value = '' "; ?> required> <br></td>
             </tr>
             <tr>
-                <td></td>
                 <td>
                     <?php 
                     if (isset($_GET['id_member'])) {
@@ -59,5 +58,4 @@ if (isset($_GET['id_member'])) {
     }
     ?>
 </body>
-
 </html>

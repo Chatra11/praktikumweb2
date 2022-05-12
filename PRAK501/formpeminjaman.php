@@ -23,7 +23,6 @@ if (isset($_GET['id_peminjaman'])) {
                 <td><input type="date" name="kembali" <?php echo (isset($_GET['id_peminjaman'])) ?  "value = " . $result[0]["tgl_kembali"] . "" : "value = '' "; ?> required> <br></td>
             </tr>
             <tr>
-                <td></td>
                 <td>
                     <?php 
                     if (isset($_GET['id_peminjaman'])) {

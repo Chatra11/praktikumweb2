@@ -8,6 +8,20 @@ if (isset($_GET['id_peminjaman'])){
 <html>
 <head>
     <title>Data Peminjaman </title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        tr{
+            border: black;
+        }
+        th{
+            background-color: #a0a0a0;
+        }
+        td{
+            background-color: #E8E8E8;
+        }
+    </style>
 </head>
 <body>
     <table border = "1">
