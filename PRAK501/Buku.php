@@ -1,5 +1,5 @@
 <?php 
-require('./model.php');
+require('model.php');
 if (isset($_GET['id_buku'])){
     hapusbuku($_GET['id_buku']);
 }
@@ -9,6 +9,9 @@ if (isset($_GET['id_buku'])){
 <head>
     <title>Buku Perpus</title>
     <style>
+        body { 
+            width: 900px;
+            margin:auto;}
         table{
             border-collapse: collapse;
         }
@@ -23,7 +26,8 @@ if (isset($_GET['id_buku'])){
         }
     </style>
 </head>
-<body>
+<body >
+<h2 style = "text-align:center;">Buku</h2>
     <table border = "1">
         <thead>
             <tr>

@@ -1,4 +1,4 @@
-<?php require('./Model.php');
+<?php require('Model.php');
 if (isset($_GET['id_buku'])) {
     editbuku();
 }
@@ -9,6 +9,7 @@ if (isset($_GET['id_buku'])) {
    <?php echo (isset($_GET['id_buku'])) ? "<title>Update Buku</title>": "<title>Tambah Buku</title>" ?> 
 </head>
 <body>
+    <h2>Form Buku</h2>
     <form action="" method="post">
         <table>
             <tr>

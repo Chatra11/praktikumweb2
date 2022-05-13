@@ -1,5 +1,5 @@
 <?php
-require("./koneksi.php");
+require("koneksi.php");
 
 function tampilbuku()
 {

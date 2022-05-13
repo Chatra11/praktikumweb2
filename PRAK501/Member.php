@@ -1,5 +1,5 @@
 <?php 
-require('./model.php');
+require('model.php');
 if (isset($_GET['id_member'])){
     hapusmember($_GET['id_member']);
 }
@@ -8,6 +8,10 @@ if (isset($_GET['id_member'])){
 <html lang="en">
 <head>
     <style>
+        body{
+            max-width: 900px;
+            margin: auto;
+        }
         table{
             border-collapse: collapse;
         }
@@ -24,6 +28,7 @@ if (isset($_GET['id_member'])){
     <title>Member Perpus</title>
 </head>
 <body>
+    <h2 style= "text-align:Center">Member</h2>
     <table border = "1">
         <thead>
             <tr>
