@@ -6,7 +6,7 @@ if (isset($_GET['id_buku'])) {
 <!DOCTYPE html>
 <html>
 <head>
-   <?php echo (isset($_GET['id_buku'])) ? "<title>Update Buku</title>": "<title>Tambah Buku</title>" ?> 
+   <?php echo (isset($_GET['id_buku'])) ? "<title>Edit Buku</title>": "<title>Tambah Buku</title>" ?> 
 </head>
 <body>
     <h2>Form Buku</h2>
@@ -36,7 +36,7 @@ if (isset($_GET['id_buku'])) {
                 <td>
                     <?php 
                     if (isset($_GET['id_buku'])) {
-                        echo "<button type=\"submit\" name=\"update\">Update</button>";
+                        echo "<button type=\"submit\" name=\"update\">Edit</button>";
                     }else {
                         echo "<button type=\"submit\" name=\"submit\">Tambah</button>";   
                     }
